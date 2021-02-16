@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+#main {
+  max-width: 620px;
+  margin: 0 auto;
+  font-family: "Merriweather", serif;
+  line-height: 190%;
+  text-align: center;
+}
+h1,h2{
+  color: #000000;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 105%;
+}
+#title{
+    font-weight: 800;
+    margin: 30px 0;
+    font-size: 40px;
+}
+h2{
+    font-weight: 400;
+    font-size: 20px;
+}
+figure {
+  margin: 0 0 30px 0;
+}
+#image {
+  max-width: 100%;
+  display: block;
+}
+#img-caption{
+    font-size: 15px;
+    color: #0f5ca5;
+    text-align: center;
+}
+p {
+  text-align: justify;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+a{
+    color: #0f5ca5;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}

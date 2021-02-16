@@ -1,0 +1,84 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  background-color: #ebf3fb;
+}
+main {
+  max-width: 540px;
+  margin: 5vh auto;
+  background-color: #fff;
+  box-shadow: 4px 0px 48px 0px rgba(0, 0, 0, 0.15);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border-radius: 12px;
+}
+section {
+  background-color: #5c74ec;
+  padding: 40px;
+  border-radius: 12px 12px 0 0;
+  color: #fff;
+}
+p {
+  padding: 0;
+}
+section > h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+form {
+  padding: 40px;
+}
+.form-section {
+  padding-bottom: 30px;
+}
+label {
+  display: block;
+  padding-bottom: 10px;
+}
+input:not([type="radio"]):not([type="checkbox"]),
+textarea,
+select {
+  display: block;
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 8px;
+  border: 1.5px #c5c6ca solid;
+  font-family: "Inter", sans-serif;
+  resize: none;
+}
+input[type="radio"] ~ label,
+input[type="checkbox"] ~ label {
+  margin-right: 15px;
+  display: inline;
+  font-weight: 400;
+}
+input:required {
+  border-color: rgb(180, 45, 45);
+}
+
+button {
+  border: 0;
+  padding: 10px 20px;
+  background-color: #5c74ec;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0 auto;
+}
+button:hover {
+  background-color: #485bbb;
+}

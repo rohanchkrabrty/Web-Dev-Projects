@@ -1,0 +1,122 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+  color: rgb(32, 33, 36);
+  font-weight: 400;
+  line-height: 28px;
+  font-style: 18px;
+  font-kerning: auto;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+h1 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #3740ff;
+}
+h2 {
+  font-weight: 600;
+  line-height: 32px;
+  font-size: 24px;
+  margin-top: 40px;
+}
+h2:first-child{
+    margin-top: 35px;
+}
+code:not(.multiline) {
+  padding: 2px 4px;
+  background: #f5f2f0;
+  border-radius: 2px;
+}
+.multiline {
+  display: block;
+  background: #f5f2f0;
+  overflow: auto;
+  padding: 20px 35px;
+  font-size: 15px;
+  line-height: 20px;
+  border-radius: 0.3em;
+  direction: ltr;
+  text-align: left;
+  white-space: pre-line;
+  word-spacing: normal;
+  color: #333;
+  font-family: "Consolas";
+}
+#navbar {
+  border: 0;
+  border-right: 1px solid #dadce0;
+  width: 258px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  padding: 26px 26px;
+}
+#navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+#navbar li{
+    padding-top: 5px;
+}
+#navbar a {
+  color: #202124;
+  text-decoration: none;
+  line-height: 30px;
+}
+#navbar a.active{
+  color: #3740ff;
+}
+#navbar a:hover{
+  color: #3740ff;
+  text-decoration: underline;
+}
+main {
+  width: calc(100% - 258px);
+  margin-left: 258px;
+  padding: 0 32px;
+}
+article {
+  max-width: 800px;
+  margin: 0 auto;
+}
+footer{
+  margin: 140px 0 50px 0;
+  text-align: center;
+}
+footer a{
+  color: #3740ff;
+  text-decoration: none;
+}
+footer a:hover{
+  text-decoration: underline;
+}
+@media only screen and (min-width: 700px) and (max-width: 980px) {
+  #navbar {
+    width: 210px;
+  }
+  main {
+    width: calc(100% - 210px);
+    margin-left: 210px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 699px) {
+  #navbar {
+    width: 100%;
+    height: auto;
+    position: static;
+    border: 0;
+    border-bottom: 1px solid #dadce0;
+  }
+  main {
+    width: 100%;
+    margin: 0;
+  }
+}
